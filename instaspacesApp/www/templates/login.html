@@ -5,16 +5,16 @@
 		<form name="myForm" >
           <label class="item item-input item-floating-label lgn-form">
             <span class="input-label">Email</span>
-            <input type="email" name="email" ng-model="email" placeholder="Email">
+            <input type="email" name="email" ng-model="email" placeholder="Email" style="outline: none;">
           </label>
 
           <label class="item item-input item-floating-label">
             <span class="input-label">Password</span>
             <input type="password" name="password" ng-model="password" placeholder="password">
           </label>
-
-          <button class="lgn-btn button button-assertive ">Login</button>
-		   
+          <div class="lgn-btn-wrapper" >
+          <button class="lgn-input  button button-assertive">Login</button>
+          </div>		   
        
 
           </form>
