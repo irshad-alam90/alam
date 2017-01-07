@@ -21,21 +21,31 @@ angular.module('starter', ['ionic'])
   .state('home',{
     url: "/home",
      templateUrl: 'templates/home.html',
-     controller: 'homeCtrl'
+     controller: 'homeCtrl',
+     controllerAs: 'hmCtrl'
   })
 
   
   .state('login',{
     url: '/login',
      templateUrl: 'templates/login.html',
-     controller: 'loginCtrl'
+     controller: 'loginCtrl',
+     controllerAs: 'lgCtrl'
   })
 
   
   .state('signup',{
     url: "/signup",
      templateUrl: 'templates/signup.html',
-     controller: 'signupCtrl'
+     controller: 'signupCtrl',
+     controllerAs: 'sgnupCtrl'
+  })
+
+  .state('cur_persent',{
+    url: "/cur_persent",
+     templateUrl: 'templates/cur_persent.html',
+     controller: 'cur_persentCtrl',
+     controllerAs: 'curpCtrl'
   })
 
 

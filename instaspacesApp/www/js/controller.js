@@ -1,4 +1,6 @@
 angular.module('starter')
+
+
 .controller('homeCtrl', function($scope,$state){
 	//var vm = this;
 	$scope.login = function(){
@@ -11,10 +13,30 @@ angular.module('starter')
 
 })
 
-.controller('loginCtrl', function(){
-	var vm = this;
+.controller('loginCtrl', function($scope,$state,$ionicHistory){
+	//var vm = this;
+
+	$scope.userlogin = function(isValid){
+		if(isValid){
+			$state.go('cur_persent');
+		}
+
+	}
+
+	$scope.myGoBack = function(){
+		$ionicHistory.goBack();
+	}
 })
 
-.controller('signupCtrl', function(){
-	var vm = this;
+.controller('signupCtrl', function($scope,$ionicHistory){
+	//var vm = this;
+	$scope.myGoBack = function(){
+		$ionicHistory.goBack();
+	}
+})
+
+.controller('cur_persentCtrl', function($scope){
+	//var vm = this;
+	
+	
 })
